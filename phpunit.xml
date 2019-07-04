@@ -30,4 +30,11 @@
         </testsuite>
     </testsuites>
 
+    <php>
+        <env name="TESTING_DB_HOST" value="mysql"/>
+        <env name="TESTING_DB_PORT" value="3306"/>
+        <env name="TESTING_DB_USER" value="encrypter"/>
+        <env name="TESTING_DB_PASS" value="secret"/>
+    </php>
+
 </phpunit>

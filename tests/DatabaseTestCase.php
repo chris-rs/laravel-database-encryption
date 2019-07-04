@@ -22,13 +22,13 @@ class DatabaseTestCase extends TestCase
 
     private $last_random_strings = null;
 
-    public function tearDown()
+    public function tearDown(): void
     {
         $this->tearDownDatabase();
         parent::tearDown();
     }
 
-    protected function getEnvironmentSetUp($app)
+    protected function getEnvironmentSetUp($app): void
     {
         if (is_null(self::$database)) {
             self::$database = 'laravel_database_encryption_testing_' . str_random(6);
