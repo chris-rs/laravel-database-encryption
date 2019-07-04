@@ -1,5 +1,5 @@
 {
-    "name": "austinheap/laravel-database-encryption",
+    "name": "chris-rs/laravel-database-encryption",
     "description": "A package for automatically encrypting and decrypting Eloquent attributes in Laravel 5.5+, based on configuration settings.",
     "keywords": [
         "laravel",
