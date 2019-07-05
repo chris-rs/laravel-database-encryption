@@ -7,10 +7,10 @@
  * @version     v0.2.0
  */
 
-namespace AustinHeap\Database\Encryption\Tests\Helper;
+namespace Sensorium\Database\Encryption\Tests\Helper;
 
-use AustinHeap\Database\Encryption\EncryptionHelper;
-use AustinHeap\Database\Encryption\Tests\TestCase;
+use Sensorium\Database\Encryption\EncryptionHelper;
+use Sensorium\Database\Encryption\Tests\TestCase;
 use DatabaseEncryption, RuntimeException;
 
 /**

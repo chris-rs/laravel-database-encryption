@@ -8,11 +8,11 @@
  * @version     v0.2.0
  */
 
-namespace AustinHeap\Database\Encryption\Tests;
+namespace Sensorium\Database\Encryption\Tests;
 
 use RuntimeException;
-use AustinHeap\Database\Encryption\EncryptionFacade;
-use AustinHeap\Database\Encryption\EncryptionHelper;
+use Sensorium\Database\Encryption\EncryptionFacade;
+use Sensorium\Database\Encryption\EncryptionHelper;
 use DatabaseEncryption as EncryptionRealFacade;
 
 /**

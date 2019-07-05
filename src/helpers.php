@@ -9,19 +9,19 @@ declare(strict_types=1);
 
 if (! function_exists('database_encryption')) {
     /**
-     * @return \AustinHeap\Database\Encryption\EncryptionHelper
+     * @return \Sensorium\Database\Encryption\EncryptionHelper
      */
-    function database_encryption(): \AustinHeap\Database\Encryption\EncryptionHelper
+    function database_encryption(): \Sensorium\Database\Encryption\EncryptionHelper
     {
-        return \AustinHeap\Database\Encryption\EncryptionFacade::getInstance();
+        return \Sensorium\Database\Encryption\EncryptionFacade::getInstance();
     }
 }
 
 if (! function_exists('db_encryption')) {
     /**
-     * @return \AustinHeap\Database\Encryption\EncryptionHelper
+     * @return \Sensorium\Database\Encryption\EncryptionHelper
      */
-    function db_encryption(): \AustinHeap\Database\Encryption\EncryptionHelper
+    function db_encryption(): \Sensorium\Database\Encryption\EncryptionHelper
     {
         return database_encryption();
     }
@@ -29,9 +29,9 @@ if (! function_exists('db_encryption')) {
 
 if (! function_exists('dbencryption')) {
     /**
-     * @return \AustinHeap\Database\Encryption\EncryptionHelper
+     * @return \Sensorium\Database\Encryption\EncryptionHelper
      */
-    function dbencryption(): \AustinHeap\Database\Encryption\EncryptionHelper
+    function dbencryption(): \Sensorium\Database\Encryption\EncryptionHelper
     {
         return database_encryption();
     }

@@ -8,10 +8,10 @@
  * @version     v0.2.0
  */
 
-namespace AustinHeap\Database\Encryption\Tests\Traits;
+namespace Sensorium\Database\Encryption\Tests\Traits;
 
-use AustinHeap\Database\Encryption\Tests\TestCase;
-use AustinHeap\Database\Encryption\Traits\HasEncryptedAttributes;
+use Sensorium\Database\Encryption\Tests\TestCase;
+use Sensorium\Database\Encryption\Traits\HasEncryptedAttributes;
 use Illuminate\Contracts\Encryption\DecryptException;
 use Illuminate\Contracts\Encryption\EncryptException;
 

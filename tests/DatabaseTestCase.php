@@ -8,9 +8,9 @@
  * @version     v0.2.0
  */
 
-namespace AustinHeap\Database\Encryption\Tests;
+namespace Sensorium\Database\Encryption\Tests;
 
-use AustinHeap\Database\Encryption\Tests\Models\DatabaseModel;
+use Sensorium\Database\Encryption\Tests\Models\DatabaseModel;
 use DB, RuntimeException;
 
 /**

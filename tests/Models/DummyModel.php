@@ -8,11 +8,11 @@
  * @version     v0.2.0
  */
 
-namespace AustinHeap\Database\Encryption\Tests\Models;
+namespace Sensorium\Database\Encryption\Tests\Models;
 
-use AustinHeap\Database\Encryption\EncryptionDefaults;
-use AustinHeap\Database\Encryption\EncryptionFacade;
-use AustinHeap\Database\Encryption\Traits\HasEncryptedAttributes;
+use Sensorium\Database\Encryption\EncryptionDefaults;
+use Sensorium\Database\Encryption\EncryptionFacade;
+use Sensorium\Database\Encryption\Traits\HasEncryptedAttributes;
 use Illuminate\Container\Container;
 use Illuminate\Encryption\Encrypter;
 use Illuminate\Support\Facades\Facade;

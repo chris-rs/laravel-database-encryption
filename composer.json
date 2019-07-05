@@ -1,5 +1,5 @@
 {
-    "name": "chris-rs/laravel-database-encryption",
+    "name": "sensorium/laravel-database-encryption",
     "description": "A package for automatically encrypting and decrypting Eloquent attributes in Laravel 5.5+, based on configuration settings.",
     "keywords": [
         "laravel",
@@ -42,6 +42,12 @@
             "email": "me@austinheap.com",
             "homepage": "https://github.com/austinheap",
             "role": "Developer"
+        },
+        {
+            "name": "Christiaan Ras",
+            "email": "christiaan.ras@sensorium69.nl",
+            "homepage": "https://github.com/sensorium-bv",
+            "role": "Developer"
         }
     ],
     "replace": {
@@ -64,7 +70,7 @@
     },
     "autoload": {
         "psr-4": {
-            "AustinHeap\\Database\\Encryption\\": "src"
+            "Sensorium\\Database\\Encryption\\": "src"
         },
         "files": [
             "src/helpers.php"
@@ -74,10 +80,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "AustinHeap\\Database\\Encryption\\EncryptionServiceProvider"
+                "Sensorium\\Database\\Encryption\\EncryptionServiceProvider"
             ],
             "aliases": {
-                "DatabaseEncryption": "AustinHeap\\Database\\Encryption\\EncryptionFacade"
+                "DatabaseEncryption": "Sensorium\\Database\\Encryption\\EncryptionFacade"
             }
         }
     }

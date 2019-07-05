@@ -8,7 +8,7 @@
  * @version     v0.2.0
  */
 
-namespace AustinHeap\Database\Encryption\Tests\Models;
+namespace Sensorium\Database\Encryption\Tests\Models;
 
 /**
  * Class FakeModel

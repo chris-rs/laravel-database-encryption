@@ -8,10 +8,10 @@
  * @version     v0.2.0
  */
 
-namespace AustinHeap\Database\Encryption\Tests\Traits;
+namespace Sensorium\Database\Encryption\Tests\Traits;
 
-use AustinHeap\Database\Encryption\Tests\DatabaseTestCase;
-use AustinHeap\Database\Encryption\Tests\Models\DatabaseModel;
+use Sensorium\Database\Encryption\Tests\DatabaseTestCase;
+use Sensorium\Database\Encryption\Tests\Models\DatabaseModel;
 
 /**
  * IntTest

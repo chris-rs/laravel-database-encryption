@@ -7,7 +7,7 @@
  */
 declare(strict_types=1);
 
-namespace AustinHeap\Database\Encryption;
+namespace Sensorium\Database\Encryption;
 
 use RuntimeException;
 use Illuminate\Support\Facades\Config;

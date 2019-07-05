@@ -8,10 +8,10 @@
  * @version     v0.2.0
  */
 
-namespace AustinHeap\Database\Encryption\Tests\Console;
+namespace Sensorium\Database\Encryption\Tests\Console;
 
-use AustinHeap\Database\Encryption\Console\Commands\MigrateEncryptionCommand;
-use AustinHeap\Database\Encryption\Tests\DatabaseTestCase;
+use Sensorium\Database\Encryption\Console\Commands\MigrateEncryptionCommand;
+use Sensorium\Database\Encryption\Tests\DatabaseTestCase;
 use DatabaseEncryption;
 use RuntimeException;
 

@@ -8,10 +8,10 @@
  * @version     v0.2.0
  */
 
-namespace AustinHeap\Database\Encryption\Tests;
+namespace Sensorium\Database\Encryption\Tests;
 
-use AustinHeap\Database\Encryption\EncryptionFacade;
-use AustinHeap\Database\Encryption\EncryptionServiceProvider;
+use Sensorium\Database\Encryption\EncryptionFacade;
+use Sensorium\Database\Encryption\EncryptionServiceProvider;
 use DB, RuntimeException, ReflectionClass;
 use Orchestra\Testbench\TestCase as BaseTestCase;
 

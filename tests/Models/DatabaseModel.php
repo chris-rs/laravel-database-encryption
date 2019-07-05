@@ -8,9 +8,9 @@
  * @version     v0.2.0
  */
 
-namespace AustinHeap\Database\Encryption\Tests\Models;
+namespace Sensorium\Database\Encryption\Tests\Models;
 
-use AustinHeap\Database\Encryption\Traits\HasEncryptedAttributes;
+use Sensorium\Database\Encryption\Traits\HasEncryptedAttributes;
 
 /**
  * DatabaseModel

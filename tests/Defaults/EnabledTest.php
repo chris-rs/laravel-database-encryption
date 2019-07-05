@@ -8,10 +8,10 @@
  * @version     v0.2.0
  */
 
-namespace AustinHeap\Database\Encryption\Tests\Defaults;
+namespace Sensorium\Database\Encryption\Tests\Defaults;
 
-use AustinHeap\Database\Encryption\Tests\TestCase;
-use AustinHeap\Database\Encryption\EncryptionDefaults;
+use Sensorium\Database\Encryption\Tests\TestCase;
+use Sensorium\Database\Encryption\EncryptionDefaults;
 
 /**
  * EnabledTest
