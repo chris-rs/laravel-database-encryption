@@ -63,7 +63,7 @@ directory. The most logical place to start are the [docs for the `HasEncryptedAt
 
 ## Requirements
 
-* Laravel: 5.5, 5.6, or 5.7
+* Laravel: 5.5, 5.6, 5.7, 5.8
 * PHP: 7.1, 7.2, or 7.3
 * PHP [OpenSSL extension](http://php.net/manual/en/book.openssl.php)
 
