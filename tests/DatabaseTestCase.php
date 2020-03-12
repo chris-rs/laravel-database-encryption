@@ -10,8 +10,9 @@
 
 namespace Sensorium\Database\Encryption\Tests;
 
-use Sensorium\Database\Encryption\Tests\Models\DatabaseModel;
 use DB, RuntimeException;
+use Illuminate\Support\Str;
+use Sensorium\Database\Encryption\Tests\Models\DatabaseModel;
 
 /**
  * DatabaseTestCase
@@ -31,7 +32,7 @@ class DatabaseTestCase extends TestCase
     protected function getEnvironmentSetUp($app): void
     {
         if (is_null(self::$database)) {
-            self::$database = 'laravel_database_encryption_testing_' . str_random(6);
+            self::$database = 'laravel_database_encryption_testing_' . Str::random(6);
         }
 
         $this->setUpDatabase();
@@ -92,10 +93,13 @@ class DatabaseTestCase extends TestCase
         $id = uniqid();
         $file = __DIR__ . '/testing-'.$id.'.sql';
         file_put_contents($file, is_null($database) ? $statement : 'USE ' . $database . '; ' . $statement);
-        $cmd = 'mysql -u' . env('TESTING_DB_USER', 'root') .
-               (empty(env('TESTING_DB_PASS', '')) ? '' : ' -p' . env('TESTING_DB_PASS', '')) .
-               ' -h ' . env('TESTING_DB_HOST', '127.0.0.1') .
-               ' < ' . $file . ' 2>&1 | grep -v "Warning: Using a password"';
+        $cmd = vsprintf('mysql -u%s %s -h %s -P %s < %s 2>&1 | grep -v "Warning: Using a password"', [
+            env('TESTING_DB_USER', 'root'),
+            empty(env('TESTING_DB_PASS', '')) ? '' : ' -p' . env('TESTING_DB_PASS', ''),
+            env('TESTING_DB_HOST', '127.0.0.1'),
+            env('TESTING_DB_PORT', 3306),
+            $file
+        ]);
         exec($cmd);
         unlink($file);
     }

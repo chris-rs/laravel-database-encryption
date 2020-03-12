@@ -10,10 +10,11 @@
 
 namespace Sensorium\Database\Encryption\Tests;
 
+use DB, RuntimeException, ReflectionClass;
+use Illuminate\Support\Str;
+use Orchestra\Testbench\TestCase as BaseTestCase;
 use Sensorium\Database\Encryption\EncryptionFacade;
 use Sensorium\Database\Encryption\EncryptionServiceProvider;
-use DB, RuntimeException, ReflectionClass;
-use Orchestra\Testbench\TestCase as BaseTestCase;
 
 /**
  * TestCase
@@ -25,7 +26,7 @@ class TestCase extends BaseTestCase
 
     protected function getEnvironmentSetUp($app)
     {
-        $app['config']->set('app.key', str_random(32));
+        $app['config']->set('app.key', Str::random(32));
         $app['config']->set('database-encryption.enabled', true);
     }
 
