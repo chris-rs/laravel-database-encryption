@@ -32,6 +32,10 @@
         </testsuite>
     </testsuites>
 
+    <!--
+    CR: set below env variables for testing. These should refer to a mysql docker container.
+    BE SURE that the mysql php client has been installed in workspace container otherwise tests will fail.
+    -->
     <php>
         <env name="TESTING_DB_HOST" value="mysql"/>
         <env name="TESTING_DB_PORT" value="3306"/>

@@ -1,0 +1,1 @@
+DROP DATABASE IF EXISTS laravel_database_encryption_testing_SLUMVJ;
